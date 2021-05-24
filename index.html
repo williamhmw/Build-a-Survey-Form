@@ -12,5 +12,45 @@
     <div id="title">
         <h1>Archabitat Survey form</h1>
     </div>
+        <div id="description">
+            <p>This is an achitectural research form.</p>
+        </div>
+        <form id="survey-form" action="">
+            <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" placeholder="Write your name" required>
+            <label id="email-label" for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Write your email" required>
+            <label id="number-label" for="number">Number:</label>
+                <input type="number" id="number" name="phonnumber" min="9" max="11" placeholder="Write your phone number xxxxxxxxx or xxxxxxxxxxx" required>
+            <p>Choose an option:</p>
+            <label for="neoclassical">
+                <input type="radio" id="neoclassical" name="Architecture" value="neoclassical">Neoclassical Architecture
+            </label>
+            <label for="gothic">
+                <input type="radio" id="gothic" name="Architecture" value="gothic">Gothic Architecture
+            </label>
+            <p>Choose one or more options:</p>
+            <label for="landscape-architecture">
+                <input type="checkbox" id="architecture-landscape" name="type-architecture" value="landscape">Landscape architecture
+            </label>
+            <label for="interior-architecture">
+                <input type="checkbox" id="interior-architecture" name="type-architecture" value="interior">Interior architecture
+            </label>
+            <p>Select the best blogs about architecture</p>
+            <select id="dropdown" name="blogs">
+                <option disabled selected value>Select one option</option>
+                <option value="archiabitat">Archabitat</option>
+                <option value="archdaily">Archdaily</option>
+                <option value="architecturelab">Architecturelab</option>
+            </select>
+            <p>Write a comment below:</p>
+            <label for="textarea">
+                <textarea id="textarea" placeholder="Please write an comment about the research form" value="textarea"></textarea> 
+            </label>
+            <div id="submit">
+                <button form="survey-form" type="submit" value="submit" class="button">Click here for send</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
